@@ -9,7 +9,7 @@ const { insert } = require("./supabase");
 const { mapOrdersToSchema, validateOrder, isValidDate } = require("./helpers");
 
 const app = express();
-const PORT = 3002;
+const PORT = process.env.PORT || 3002;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
