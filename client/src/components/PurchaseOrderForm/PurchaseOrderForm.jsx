@@ -33,7 +33,7 @@ const Form = () => {
     formData.append("date", date);
 
     axios
-      .post("/api", formData)
+      .post("https://ancient-hollows-18011-9868e45b94e7.herokuapp.com/api", formData)
       .then(function (response) {
         setError(undefined)
         setSuccessMessage('Purchase Order Posted successfuly')
